@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Dark mode */
+.App{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #F2F2F2;
+  transition: 0.5s;
+}
+.App.dark{
+  background: #202C36;
 }
 
-.App-link {
-  color: #61dafb;
+.App.dark .card-item{
+  background:#2B3844;
+  color: #FFFFFF;
+}
+.App.dark .card-list{
+  color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App.dark .search form{
+  background: #2B3844;
+  color: #FFFFFF;
+}
+.App.dark .search form input::placeholder{
+  color: #FFFFFF;
+}
+.App.dark .search select{
+  background: #2B3844;
+  color: #FFFFFF;
+}
+
+.App.dark .country-link{
+  background:#2B3844;
+  color: #fff;
+}
+.App.dark .country-page div h2,
+.App.dark .country_page_list-item li,
+.App.dark .country_subtitle{
+  color: #fff;
+}
+.App.dark .country-border{
+  background:#2B3844;
+  color: #fff;
 }

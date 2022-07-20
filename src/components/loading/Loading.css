@@ -1,0 +1,42 @@
+.loader{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: rgba(0,0, 0, 0.2);
+}
+.line_loader{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.line{
+    width: 15px;
+    height: 150px;
+    background: rgba(255,255, 255, 0.6);
+    border-radius: 10px;
+    animation: scaleloader 1s linear infinite;
+}
+
+.line:nth-child(2){
+    height: 180px;
+    animation-delay:0.25s ;
+}
+
+.line:nth-child(3){
+    
+    animation-delay:0.5s ;
+}
+
+@keyframes scaleloader {
+    20%{
+        background-color: #fff;
+        transform: scaleY(1.5);
+    } 40% {
+        transform: scaleY(1);
+    }
+}
